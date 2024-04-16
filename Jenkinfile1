@@ -3,11 +3,11 @@ pipeline {
     parameters {
          String(name:'Greeting', defaultvalue:'Hello', description:'How Should i greet the world?')
     } 
-     stages {
-        stage ('Example'){
-           steps {
+     Stages {
+        Stage ('Example'){
+           Steps {
               echo"${params.greeting}welcome to jenkins world?" 
            }
         }
-    }
+     }
 }
