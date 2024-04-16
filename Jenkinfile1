@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    parameters {
+         String(name:'Greeting', defaultvalue:'Hello', description:'How Should i greet the world?')
+    } 
+     stages {
+        stage ('Example'){
+           steps {
+              echo"${params.greeting}welcome to jenkins world?" 
+           }
+        }
+    }
+}
